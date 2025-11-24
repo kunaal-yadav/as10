@@ -3,7 +3,7 @@
 #   https://realpython.com/python-rock-paper-scissors/
 
 import random
-
+while true:
 user_action = input("Enter throw (rock, paper, scissors): ")
 ai_action = random.choice(["rock", "paper", "scissors"])
 
@@ -26,3 +26,8 @@ elif user_action == "scissors":
         print("Scissors cuts paper! You win!")
     else:
         print("Rock smashes scissors! You lose.")
+    else:
+        print("Invalid action")
+    play_again = input("Play again? (y/n):").lower()
+    if play_again != "y":
+         break
